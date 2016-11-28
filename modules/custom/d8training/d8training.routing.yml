@@ -1,0 +1,7 @@
+d8training.node_list:
+  path: '/list/{node}'
+  defaults:
+    _controller: '\Drupal\d8training\Controller\ListController::content'
+    _title: 'book'
+  requirements:
+    _permission: 'access content'

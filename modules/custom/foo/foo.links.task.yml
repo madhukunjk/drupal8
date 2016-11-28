@@ -1,0 +1,9 @@
+foo.foo_controller_hello:
+  route_name: foo.foo_controller_hello
+  base_route: foo.foo_controller_hello
+  title: Hello
+
+foo.foo_controller_hellotab:
+  route_name: foo.foo_controller_hellotab
+  base_route: foo.foo_controller_hello
+  title: Hello Tab

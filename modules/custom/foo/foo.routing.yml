@@ -1,0 +1,25 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev//foo/hello/{name}, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\foo\Controller\FooController")
+# and a method ("hello").
+foo.foo_controller_hello:
+  path: '/foo/hello'
+  defaults:
+    _controller: '\Drupal\foo\Controller\FooController::hello'
+    _title: 'page'
+  requirements:
+    _permission: 'access content'
+
+foo.foo_controller_hellotab:
+  path: '/foo/hellotab'
+  defaults:
+    _controller: '\Drupal\foo\Controller\FooController::hellotab'
+    _title: 'page'
+  requirements:
+    _permission: 'access content'

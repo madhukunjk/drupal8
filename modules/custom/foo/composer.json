@@ -1,0 +1,14 @@
+{
+  "name": "drupal/foo",
+  "type": "drupal-module",
+  "description": "module for practice",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/foo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/foo",
+    "source": "http://cgit.drupalcode.org/foo"
+  },
+  "require": { }
+}

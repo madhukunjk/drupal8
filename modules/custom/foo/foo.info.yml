@@ -1,0 +1,5 @@
+name: foo
+type: module
+description: module for practice
+core: 8.x
+package: Custom
