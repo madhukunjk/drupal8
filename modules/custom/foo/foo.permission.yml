@@ -1,0 +1,7 @@
+foo node access:
+  title: 'foo content access control'
+  description: 'View, edit and delete all content regardless of permission restrictions.'
+  restrict access: true
+
+permission_callbacks:
+  - Drupal\foo\Controller\NodelistingPermissions::fooPermissions

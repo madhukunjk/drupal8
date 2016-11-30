@@ -20,6 +20,24 @@ foo.foo_controller_hellotab:
   path: '/foo/hellotab'
   defaults:
     _controller: '\Drupal\foo\Controller\FooController::hellotab'
-    _title: 'page'
+    _title: 'content'
+  requirements:
+    _query_siteid_check: 'TRUE'
+
+foo.foo_controller_form:
+  path: '/test'
+  defaults:
+    _form: 'Drupal\foo\Form\SimpleForm'
+    _title: 'test'
   requirements:
     _permission: 'access content'
+foo.appid:
+  path: '/admin/config/foo/appid'
+  defaults:
+    _form: '\Drupal\foo\Form\appid'
+    _title: 'appid'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

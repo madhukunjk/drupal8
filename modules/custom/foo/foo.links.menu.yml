@@ -1,0 +1,10 @@
+foo.default_val:
+title: 'Drupal8'
+  route_name: foo.foo_controller_hello
+  parent: system.admin_config_developmentfoo.appid:
+  title: 'appid'
+  route_name: foo.appid
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

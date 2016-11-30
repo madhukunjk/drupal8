@@ -1,0 +1,8 @@
+services:
+  foo.query_siteid_check:
+    class: Drupal\foo\QueryAccessCheck
+    tags: 
+      - { name: access_check, applies_to: _query_siteid_check }
+  foo.form_manager:
+    class: Drupal\foo\FormManager
+    arguments: ['@database']

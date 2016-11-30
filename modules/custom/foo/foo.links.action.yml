@@ -1,0 +1,5 @@
+foo.node_add:
+  route_name: entity.taxonomy_vocabulary.add_form
+  title: 'Add Content'
+  appears_on:
+    - 'foo.default_controller_hello'
