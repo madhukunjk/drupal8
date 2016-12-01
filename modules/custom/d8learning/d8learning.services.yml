@@ -1,0 +1,12 @@
+services:
+  d8learning.weather:
+    class: Drupal\d8learning\WeatherService
+    arguments: ["@config.factory", "@http_client"]
+
+
+services:
+  d8learning.weather:
+    class: Drupal\d8learning\EventSubscriber\WeatherSubscriber
+    tags:
+      - { name: event_subscriber }
+

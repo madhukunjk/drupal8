@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a book tree.
+ *
+ * Returns HTML for a wrapper for a book sub-tree.
+ *
+ * Available variables:
+ * - items: A nested list of book items. Each book item contains:
+ *   - attributes: HTML attributes for the book item.
+ *   - below: The book item child items.
+ *   - title: The book link title.
+ *   - url: The book link URL, instance of \Drupal\Core\Url.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     book tree.
+ *   - is_collapsed: TRUE if the link has children within the current book tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ *
+ * @ingroup themeable
+ */
+#}
+<h2>OpenWeather Block</h2>
+<h2>{{ city_value.temp_min }}</h2>
+<h2>{{ city_value.temp_max }}</h2>
+<h2>{{ city_value.pressure }}</h2>
+<h2>{{ city_value.humidity }}</h2>
+<h2>{{ city_value.speed }}</h2>
+
+

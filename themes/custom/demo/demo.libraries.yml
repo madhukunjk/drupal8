@@ -1,0 +1,28 @@
+global-styling:
+  css:
+    theme:
+      assets/css/demo.css: {media: print}
+
+  js:
+    theme:
+      assets/js/demo.js: {attributes:{async}}
+
+libraries-override:
+  d8training/weather: core/jquery
+
+libraries-override:
+  d8training/weather:
+    css:
+      theme:
+        assets/css/weather.css: assets/css/xyz.css
+
+libraries-extend:
+  d8training/weather:
+    css:
+      theme:
+        akakana
+        asasa
+
+    js:
+      asaddad
+      addafd

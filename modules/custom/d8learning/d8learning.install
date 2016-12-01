@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * D8 Learning Install File.
+ */
+
+use Drupal\Core\Field\BaseFieldDefinition;
+
+
+/**
+ * Implements hook_schema().
+ */
+function d8learning_schema() {
+  $schema['d8learning'] = array(
+    'description' => 'field Description Here',
+    'fields' => array(
+      'id' => array(
+        'description' => 'ID of the record.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'name' => array(
+        'description' => 'Name field record.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    ),
+    'primary key' => array('id')
+  );
+
+  return $schema;
+}

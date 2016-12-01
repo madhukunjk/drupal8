@@ -1,0 +1,36 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev//d8learning/hello/{name}, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\d8learning\Controller\DefaultController")
+# and a method ("hello").
+d8learning.default_controller_hello:
+  path: '/d8learning/hello/{name}'
+  defaults:
+    _controller: '\Drupal\d8learning\Controller\DefaultController::hello'
+    _title: 'hello'
+  requirements:
+    _permission: 'access content'
+
+d8learning.default_controller_test:
+  path: '/d8learning/myform'
+  defaults:
+    _form: '\Drupal\d8learning\Form\DefaultForm'
+    _title: 'Default Form'
+  requirements:
+    _permission: 'access content'    
+
+d8learning.default_form:
+  path: '/admin/config/d8learning/default'
+  defaults:
+    _form: '\Drupal\d8learning\Form\AdminWeatherSettings'
+    _title: 'Settings Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
